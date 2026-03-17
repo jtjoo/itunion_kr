@@ -1,1 +1,27 @@
+/* ── Noto Sans KR (Google Fonts) ───────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap');
+
+/* ── April16th ─────────────────────────────────────────── */
+@font-face {
+  font-family: 'April16th-Life';
+  src: url('../assets/font/April16th/April16th-Life.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'April16th-Promise';
+  src: url('../assets/font/April16th/April16th-Promise.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'April16th-Safety';
+  src: url('../assets/font/April16th/April16th-Safety.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
