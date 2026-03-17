@@ -110,7 +110,6 @@
   --font-display-promise: var(--font-display-promise);
   --font-display-safety: var(--font-display-safety);
 
-
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -240,6 +239,16 @@
 
   .font-display-safety {
     font-family: var(--font-display-safety);
+  }
+
+  .font-display-safety-red {
+    font-family: var(--font-display-safety);
+    font-palette: --safety-red;
+  }
+
+  .font-display-safety-blue {
+    font-family: var(--font-display-safety);
+    font-palette: --safety-blue;
   }
 
   /* Semantic text size helpers */

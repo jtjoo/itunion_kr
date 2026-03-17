@@ -24,7 +24,7 @@ export function HomePage() {
           />
         </div>
         <div className="relative h-full max-w-[1200px] mx-auto flex flex-col justify-end items-end p-4 sm:p-6 md:p-[30px]">
-          <h1 className="font-['Noto_Sans_KR',sans-serif] text-[24px] sm:text-[32px] md:text-[63px] text-[#d9d9d9] text-right leading-none mb-4 sm:mb-6">
+          <h1 className="font-display-promise text-[24px] sm:text-[32px] md:text-[63px] text-[#d9d9d9] text-right leading-none mb-4 sm:mb-6">
             IT노동자의 내일을 함께 만듭니다
           </h1>
           <div className="flex gap-3 sm:gap-4 md:gap-5">
@@ -58,7 +58,7 @@ export function HomePage() {
                 viewBox="0 0 24 24"
                 fill="none"
               >
-                <path d={svgPaths.p14cb6300} fill="#374957" />
+                <path d={svgPaths.p14cb6300} fill="#fff" />
               </svg>
               조합원 가입
             </Link>
@@ -332,12 +332,12 @@ export function HomePage() {
                 >
                   <div className="bg-[#d9d9d9] rounded-xl p-5">
                     <p
-                      className="font-['Noto_Sans_KR',sans-serif] text-[28px] md:text-[48px] leading-[1.2] tracking-[-0.96px]"
-                      style={{ color: item.color }}
+                      className={`font-display-promise text-[28px] md:text-[48px] leading-[1.2] tracking-[-0.96px]`}
+                      style={{ color:item.color }}
                     >
                       {item.year}
                     </p>
-                    <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] md:text-[24px] text-[rgba(0,0,0,0.5)] leading-[1.2] mt-3">
+                    <p className="font-display-promise text-[16px] md:text-[24px] text-[rgba(0,0,0,0.5)] leading-[1.2] mt-3">
                       {item.title}
                     </p>
                     <div className="font-['Noto_Sans_KR',sans-serif] text-[14px] md:text-[16px] text-black mt-2 leading-[1.2] whitespace-pre-line">
