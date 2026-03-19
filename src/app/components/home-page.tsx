@@ -1,8 +1,9 @@
 import { Link } from "react-router";
 import svgPaths from "../../imports/svg-q5dhknduiw";
-import imgMainBanner from "../../assets/img/main_hero.jpg";
-import imgImage from "../../assets/img/ITu_character.svg";
 import { Shield, Briefcase, Smile } from "lucide-react";
+
+const imgMainBanner = "/assets/img/main_hero.jpg";
+const imgImage = "/assets/img/ITu_character.svg";
 
 export function HomePage() {
   return (
