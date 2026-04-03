@@ -1,25 +1,22 @@
-# Dependencies
-node_modules/
-
-# Build output
-dist/
-dist-ssr/
-
-# Vite cache
-.vite/
-
-# Logs
-*.log
-npm-debug.log*
-
-# OS
+build
+dist / media
+node_modules
 .DS_Store
-Thumbs.db
+.env
+.next
+next-env.d.ts
+.vercel
 
-# Editor
-.vscode/
-.idea/
-*.swp
+# Payload default media upload directory
+public/media/
 
-# Zone identifiers (WSL)
-*.Identifier
+public/robots.txt
+public/sitemap*.xml
+
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
