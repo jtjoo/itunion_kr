@@ -843,6 +843,21 @@ export interface CommunityPageBlock {
  * via the `definition` "PromisesPageBlock".
  */
 export interface PromisesPageBlock {
+  content?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'promisesPage';
@@ -1305,6 +1320,7 @@ export interface CommunityPageBlockSelect<T extends boolean = true> {
  * via the `definition` "PromisesPageBlock_select".
  */
 export interface PromisesPageBlockSelect<T extends boolean = true> {
+  content?: T;
   id?: T;
   blockName?: T;
 }
