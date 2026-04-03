@@ -201,7 +201,19 @@ export interface Page {
       | null;
     media?: (number | null) | Media;
   };
-  layout: (CallToActionBlock | ContentBlock | MediaBlock | ArchiveBlock | FormBlock | HomePageBlock)[];
+  layout: (
+    | CallToActionBlock
+    | ContentBlock
+    | MediaBlock
+    | ArchiveBlock
+    | FormBlock
+    | HomePageBlock
+    | AboutPageBlock
+    | NewsPageBlock
+    | ConsultPageBlock
+    | CommunityPageBlock
+    | PromisesPageBlock
+  )[];
   meta?: {
     title?: string | null;
     /**
@@ -792,6 +804,51 @@ export interface HomePageBlock {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "AboutPageBlock".
+ */
+export interface AboutPageBlock {
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'aboutPage';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "NewsPageBlock".
+ */
+export interface NewsPageBlock {
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'newsPage';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ConsultPageBlock".
+ */
+export interface ConsultPageBlock {
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'consultPage';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CommunityPageBlock".
+ */
+export interface CommunityPageBlock {
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'communityPage';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "PromisesPageBlock".
+ */
+export interface PromisesPageBlock {
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'promisesPage';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "redirects".
  */
 export interface Redirect {
@@ -1099,6 +1156,11 @@ export interface PagesSelect<T extends boolean = true> {
         archive?: T | ArchiveBlockSelect<T>;
         formBlock?: T | FormBlockSelect<T>;
         homePage?: T | HomePageBlockSelect<T>;
+        aboutPage?: T | AboutPageBlockSelect<T>;
+        newsPage?: T | NewsPageBlockSelect<T>;
+        consultPage?: T | ConsultPageBlockSelect<T>;
+        communityPage?: T | CommunityPageBlockSelect<T>;
+        promisesPage?: T | PromisesPageBlockSelect<T>;
       };
   meta?:
     | T
@@ -1203,6 +1265,46 @@ export interface FormBlockSelect<T extends boolean = true> {
  * via the `definition` "HomePageBlock_select".
  */
 export interface HomePageBlockSelect<T extends boolean = true> {
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "AboutPageBlock_select".
+ */
+export interface AboutPageBlockSelect<T extends boolean = true> {
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "NewsPageBlock_select".
+ */
+export interface NewsPageBlockSelect<T extends boolean = true> {
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ConsultPageBlock_select".
+ */
+export interface ConsultPageBlockSelect<T extends boolean = true> {
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CommunityPageBlock_select".
+ */
+export interface CommunityPageBlockSelect<T extends boolean = true> {
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "PromisesPageBlock_select".
+ */
+export interface PromisesPageBlockSelect<T extends boolean = true> {
   id?: T;
   blockName?: T;
 }

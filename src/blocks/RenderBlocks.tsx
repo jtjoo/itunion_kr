@@ -8,6 +8,11 @@ import { ContentBlock } from '@/blocks/Content/Component'
 import { FormBlock } from '@/blocks/Form/Component'
 import { MediaBlock } from '@/blocks/MediaBlock/Component'
 import { HomePageBlock } from '@/blocks/HomePage/Component'
+import { AboutPageBlock } from '@/blocks/AboutPage/Component'
+import { NewsPageBlock } from '@/blocks/NewsPage/Component'
+import { ConsultPageBlock } from '@/blocks/ConsultPage/Component'
+import { CommunityPageBlock } from '@/blocks/CommunityPage/Component'
+import { PromisesPageBlock } from '@/blocks/PromisesPage/Component'
 
 const blockComponents = {
   archive: ArchiveBlock,
@@ -16,6 +21,11 @@ const blockComponents = {
   formBlock: FormBlock,
   mediaBlock: MediaBlock,
   homePage: HomePageBlock,
+  aboutPage: AboutPageBlock,
+  newsPage: NewsPageBlock,
+  consultPage: ConsultPageBlock,
+  communityPage: CommunityPageBlock,
+  promisesPage: PromisesPageBlock,
 }
 
 export const RenderBlocks: React.FC<{
