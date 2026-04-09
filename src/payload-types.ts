@@ -798,6 +798,53 @@ export interface Form {
  * via the `definition` "HomePageBlock".
  */
 export interface HomePageBlock {
+  heroTitle?: string | null;
+  heroButtons?:
+    | {
+        label: string;
+        href: string;
+        id?: string | null;
+      }[]
+    | null;
+  whoHeading?: string | null;
+  whoBody?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  activitiesHeading?: string | null;
+  activitiesSubheading?: string | null;
+  activities?:
+    | {
+        title: string;
+        desc: string;
+        id?: string | null;
+      }[]
+    | null;
+  timelineHeading?: string | null;
+  timelineSubheading?: string | null;
+  timelineItems?:
+    | {
+        year: string;
+        title: string;
+        desc: string;
+        color?: ('#c30d23' | '#0083ff') | null;
+        side?: ('right' | 'left') | null;
+        id?: string | null;
+      }[]
+    | null;
+  ctaHeading?: string | null;
+  ctaSubheading?: string | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'homePage';
@@ -807,6 +854,29 @@ export interface HomePageBlock {
  * via the `definition` "AboutPageBlock".
  */
 export interface AboutPageBlock {
+  heroTitle?: string | null;
+  heroSubtitle?: string | null;
+  panelHeading?: string | null;
+  panelSubheading?: string | null;
+  panelBody?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  goalsHeading?: string | null;
+  goalsSubheading?: string | null;
+  ctaHeading?: string | null;
+  ctaSubheading?: string | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'aboutPage';
@@ -825,6 +895,9 @@ export interface NewsPageBlock {
  * via the `definition` "ConsultPageBlock".
  */
 export interface ConsultPageBlock {
+  phone?: string | null;
+  phoneHours?: string | null;
+  email?: string | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'consultPage';
@@ -1280,6 +1353,39 @@ export interface FormBlockSelect<T extends boolean = true> {
  * via the `definition` "HomePageBlock_select".
  */
 export interface HomePageBlockSelect<T extends boolean = true> {
+  heroTitle?: T;
+  heroButtons?:
+    | T
+    | {
+        label?: T;
+        href?: T;
+        id?: T;
+      };
+  whoHeading?: T;
+  whoBody?: T;
+  activitiesHeading?: T;
+  activitiesSubheading?: T;
+  activities?:
+    | T
+    | {
+        title?: T;
+        desc?: T;
+        id?: T;
+      };
+  timelineHeading?: T;
+  timelineSubheading?: T;
+  timelineItems?:
+    | T
+    | {
+        year?: T;
+        title?: T;
+        desc?: T;
+        color?: T;
+        side?: T;
+        id?: T;
+      };
+  ctaHeading?: T;
+  ctaSubheading?: T;
   id?: T;
   blockName?: T;
 }
@@ -1288,6 +1394,15 @@ export interface HomePageBlockSelect<T extends boolean = true> {
  * via the `definition` "AboutPageBlock_select".
  */
 export interface AboutPageBlockSelect<T extends boolean = true> {
+  heroTitle?: T;
+  heroSubtitle?: T;
+  panelHeading?: T;
+  panelSubheading?: T;
+  panelBody?: T;
+  goalsHeading?: T;
+  goalsSubheading?: T;
+  ctaHeading?: T;
+  ctaSubheading?: T;
   id?: T;
   blockName?: T;
 }
@@ -1304,6 +1419,9 @@ export interface NewsPageBlockSelect<T extends boolean = true> {
  * via the `definition` "ConsultPageBlock_select".
  */
 export interface ConsultPageBlockSelect<T extends boolean = true> {
+  phone?: T;
+  phoneHours?: T;
+  email?: T;
   id?: T;
   blockName?: T;
 }
