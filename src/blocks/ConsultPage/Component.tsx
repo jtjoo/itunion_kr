@@ -3,10 +3,15 @@
 import { Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Phone, Mail, MessageSquare } from 'lucide-react'
+import type { ConsultPageBlock as ConsultPageBlockProps } from '@/payload-types'
 
-function ConsultPageBlockClient() {
+function ConsultPageBlockClient(props: ConsultPageBlockProps) {
   const searchParams = useSearchParams()
   const activeTab = searchParams.get('tab') || 'consult'
+
+  const phone = props.phone ?? '02-7186-9939'
+  const phoneHours = props.phoneHours ?? '평일 09:00 ~ 18:00'
+  const email = props.email ?? 'itlabor@itunion.or.kr'
 
   return (
     <div className="flex flex-col items-center w-full">
@@ -28,8 +33,8 @@ function ConsultPageBlockClient() {
       <section className="w-full bg-white py-6 sm:py-8 md:py-12 px-4 sm:px-6">
         <div className="max-w-[900px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { icon: <Phone size={32} />, title: '전화 상담', info: '02-7186-9939', desc: '평일 09:00 ~ 18:00' },
-            { icon: <Mail size={32} />, title: '이메일 상담', info: 'itlabor@itunion.or.kr', desc: '24시간 접수 가능' },
+            { icon: <Phone size={32} />, title: '전화 상담', info: phone, desc: phoneHours },
+            { icon: <Mail size={32} />, title: '이메일 상담', info: email, desc: '24시간 접수 가능' },
             { icon: <MessageSquare size={32} />, title: '온라인 상담', info: '아래 양식으로 접수', desc: '3일 이내 답변' },
           ].map((item) => (
             <div
@@ -48,10 +53,10 @@ function ConsultPageBlockClient() {
   )
 }
 
-export function ConsultPageBlock() {
+export function ConsultPageBlock(props: ConsultPageBlockProps) {
   return (
     <Suspense>
-      <ConsultPageBlockClient />
+      <ConsultPageBlockClient {...props} />
     </Suspense>
   )
 }
