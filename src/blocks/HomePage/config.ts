@@ -1,5 +1,9 @@
 import type { Block } from 'payload'
-import { lexicalEditor, FixedToolbarFeature, InlineToolbarFeature } from '@payloadcms/richtext-lexical'
+import {
+  lexicalEditor,
+  FixedToolbarFeature,
+  InlineToolbarFeature,
+} from '@payloadcms/richtext-lexical'
 
 export const HomePageBlock: Block = {
   slug: 'homePage',
@@ -23,8 +27,8 @@ export const HomePageBlock: Block = {
         { name: 'href', type: 'text', required: true, label: '링크' },
       ],
       defaultValue: [
-        { label: '후원하기', href: '/about' },
-        { label: '조합원 가입', href: '/community' },
+        { label: '후원하기', href: '#' },
+        { label: '조합원 가입', href: '#' },
       ],
     },
 
@@ -88,7 +92,8 @@ export const HomePageBlock: Block = {
       name: 'timelineSubheading',
       type: 'text',
       label: '연혁 부제목',
-      defaultValue: '한국정보통신산업노동조합은 국내 최초로 설립된 IT산업에 종사하는 노동자를 대상으로 한 산별노조입니다.',
+      defaultValue:
+        '한국정보통신산업노동조합은 국내 최초로 설립된 IT산업에 종사하는 노동자를 대상으로 한 산별노조입니다.',
     },
     {
       name: 'timelineItems',
@@ -120,12 +125,48 @@ export const HomePageBlock: Block = {
         },
       ],
       defaultValue: [
-        { year: '2004-2005', title: '노동조합의 초석을 다지다', desc: '정부의 부당한 설립 신고 반려에 맞서 싸워 대한민국 최초의 IT노조 지위를 확보하고, 노동조합으로서 조직을 키워 나갔습니다.', color: '#c30d23', side: 'right' },
-        { year: '2008-2016', title: '본격적인 IT노동자를 위한 투쟁', desc: '서울시의회 개발자 폭행사건 대응, "야근시계"앱 개발 및 배포, SW산업진흥법 개정안 추진 등으로 IT산업의 노동자를 위한 본격적인 권리 쟁취를 위해 활동해왔습니다.', color: '#0083ff', side: 'left' },
-        { year: '2017-2019', title: 'IT산업 내 다양한 산업 노동자 피해사례 공론화', desc: '게임산업계의 연이은 노동자 사망사건에 대응하여 장시간 노동 실태를 고발하고, 한국미래기술 양진호 회장 폭력행위 고발 등 피해 사례들을 공론화하였습니다.', color: '#c30d23', side: 'right' },
-        { year: '2020-2024', title: '게임산업 노동환경 개선', desc: '야근은 2급 발암물질이라는 슬로건과 함께 게임 업계의 장시간 노동 실태를 고발하고 전수 조사를 이끌어내는 등 실질적 변화를 도모했습니다.', color: '#0083ff', side: 'left' },
-        { year: '2025', title: '노동운동의 국제화, AI 시대에 대응', desc: '해외 기업에 직접 고용된 노동자의 부당 해고 대응 및 AI 기술의 급격한 발전으로 인한 노동자 위기에 대한 문제의식을 공유하였습니다.', color: '#c30d23', side: 'right' },
-        { year: '현재', title: '초심으로 돌아가 새로운 시작', desc: 'IT노조의 초기 멤버와 새로 합류한 동지들과 함께 새 집행부를 꾸렸습니다. 기존과 다른 새로운 투쟁 방식을 도모하고자 합니다.', color: '#0083ff', side: 'left' },
+        {
+          year: '2004-2005',
+          title: '노동조합의 초석을 다지다',
+          desc: '정부의 부당한 설립 신고 반려에 맞서 싸워 대한민국 최초의 IT노조 지위를 확보하고, 노동조합으로서 조직을 키워 나갔습니다.',
+          color: '#c30d23',
+          side: 'right',
+        },
+        {
+          year: '2008-2016',
+          title: '본격적인 IT노동자를 위한 투쟁',
+          desc: '서울시의회 개발자 폭행사건 대응, "야근시계"앱 개발 및 배포, SW산업진흥법 개정안 추진 등으로 IT산업의 노동자를 위한 본격적인 권리 쟁취를 위해 활동해왔습니다.',
+          color: '#0083ff',
+          side: 'left',
+        },
+        {
+          year: '2017-2019',
+          title: 'IT산업 내 다양한 산업 노동자 피해사례 공론화',
+          desc: '게임산업계의 연이은 노동자 사망사건에 대응하여 장시간 노동 실태를 고발하고, 한국미래기술 양진호 회장 폭력행위 고발 등 피해 사례들을 공론화하였습니다.',
+          color: '#c30d23',
+          side: 'right',
+        },
+        {
+          year: '2020-2024',
+          title: '게임산업 노동환경 개선',
+          desc: '야근은 2급 발암물질이라는 슬로건과 함께 게임 업계의 장시간 노동 실태를 고발하고 전수 조사를 이끌어내는 등 실질적 변화를 도모했습니다.',
+          color: '#0083ff',
+          side: 'left',
+        },
+        {
+          year: '2025',
+          title: '노동운동의 국제화, AI 시대에 대응',
+          desc: '해외 기업에 직접 고용된 노동자의 부당 해고 대응 및 AI 기술의 급격한 발전으로 인한 노동자 위기에 대한 문제의식을 공유하였습니다.',
+          color: '#c30d23',
+          side: 'right',
+        },
+        {
+          year: '현재',
+          title: '초심으로 돌아가 새로운 시작',
+          desc: 'IT노조의 초기 멤버와 새로 합류한 동지들과 함께 새 집행부를 꾸렸습니다. 기존과 다른 새로운 투쟁 방식을 도모하고자 합니다.',
+          color: '#0083ff',
+          side: 'left',
+        },
       ],
     },
 
