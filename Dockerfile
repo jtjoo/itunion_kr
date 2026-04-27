@@ -17,16 +17,16 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Make build-time env vars available (Coolify injects these as ARGs/secrets)
-ARG DATABASE_URL
-ARG PAYLOAD_SECRET
-ARG NEXT_PUBLIC_SERVER_URL
-ARG NODE_ENV=production
+# Build-time env vars (Coolify injects these as ARGs/secrets)
+# DATABASE_URL needs a dummy value for Payload config to load; actual DB used at runtime
+ARG DATABASE_URL=postgresql://localhost/dummy
+ARG PAYLOAD_SECRET=build-time-placeholder-secret-key
+ARG NEXT_PUBLIC_SERVER_URL=http://localhost:3000
 
-ENV DATABASE_URL=$DATABASE_URL
-ENV PAYLOAD_SECRET=$PAYLOAD_SECRET
-ENV NEXT_PUBLIC_SERVER_URL=$NEXT_PUBLIC_SERVER_URL
-ENV NODE_ENV=$NODE_ENV
+ENV DATABASE_URL=${DATABASE_URL}
+ENV PAYLOAD_SECRET=${PAYLOAD_SECRET}
+ENV NEXT_PUBLIC_SERVER_URL=${NEXT_PUBLIC_SERVER_URL}
+ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
 RUN corepack enable pnpm && pnpm run build
