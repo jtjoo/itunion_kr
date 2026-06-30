@@ -23,3 +23,12 @@ Thumbs.db
 
 # Zone identifiers (WSL)
 *.Identifier
+
+# Environment (contains secrets)
+.env
+.env.local
+.env.*.local
+
+# Next.js cache (remnant from old setup)
+.next/
+next-env.d.ts
