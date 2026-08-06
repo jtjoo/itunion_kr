@@ -23,9 +23,11 @@ npm run build      # production build to dist/
 Docker (for deployment):
 
 ```bash
-docker compose up -d   # build & serve via nginx at http://localhost:5173
+docker compose up -d   # build & serve via nginx on port 80 (container)
 docker compose down
 ```
+
+The compose file binds no host ports — it's designed for Coolify's proxy to route a domain to container port 80.
 
 ## Project Structure
 
