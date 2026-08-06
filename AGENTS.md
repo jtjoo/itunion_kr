@@ -58,7 +58,7 @@ src/
 - **Styling**: Tailwind utility classes only — no CSS modules. Use `@` alias for `src/` imports (configured in `vite.config.ts`).
 - **Colors**: hardcoded hex via arbitrary values. Brand red is `#c30d23`; grays are `#1e1e1e`, `#757575`, `#d9d9d9`, `#e6e6e6`, etc. Match existing values rather than inventing new palettes.
 - **Fonts**: Noto Sans KR via `font-['Noto_Sans_KR',sans-serif]`; display fonts `font-display-promise` / `font-display-safety` / `font-display-life` (April16th family, defined in `src/styles/fonts.css`).
-- **Images**: SVG paths imported from `src/imports/svg-*.ts` (Figma-generated path maps). Bitmap assets live in `public/assets/img/` (referenced as `/assets/img/...`).
+- **Images**: SVG paths imported from `src/imports/svg-*.ts` (Figma-generated path maps). Bitmap assets in `src/assets/img/` are imported as modules (`import img from "../../assets/img/..."`), which Vite bundles into `dist/assets/`. There is **no `public/` directory** — never reference `/assets/...` URL strings.
 - **UI text**: Korean (ko). Keep UI strings in Korean.
 - **Components**: shadcn/ui components in `src/app/components/ui/` are the standard UI primitives — reuse them instead of adding new ones.
 

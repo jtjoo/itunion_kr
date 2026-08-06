@@ -1,9 +1,8 @@
 import { Link } from "react-router";
 import svgPaths from "../../imports/svg-q5dhknduiw";
 import { Shield, Briefcase, Smile } from "lucide-react";
-
-const imgMainBanner = "/assets/img/main_hero.jpg";
-const imgImage = "/assets/img/ITu_character.svg";
+import imgMainBanner from "../../assets/img/main_hero.jpg";
+import imgImage from "../../assets/img/ITu_character.svg";
 
 export function HomePage() {
   return (
@@ -354,53 +353,41 @@ export function HomePage() {
 
       {/* Final CTA */}
       <section className="w-full bg-white">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-8 md:px-16 pb-10 sm:pb-12 md:pb-16 flex justify-center">
-          <div className="bg-[#e4e8f6] rounded-[24px] sm:rounded-[47px] px-6 sm:px-8 md:px-[144px] py-10 sm:py-[72px] w-full max-w-[900px] flex flex-col items-center gap-5">
-            <div className="text-center py-2 sm:py-[26px]">
-              <h2 className="font-['Noto_Sans_KR',sans-serif] text-[24px] sm:text-[36px] md:text-[72px] text-[#1e1e1e] leading-[1.2] tracking-[-2.16px]">
-                IT노조와 함께 해주십시오!
-              </h2>
-              <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] sm:text-[20px] md:text-[32px] text-[#1e1e1e] leading-[1.2] mt-3 sm:mt-5">
-                나를 지키는 가장 확실한 방법은
-                <br />
-                우리가 되는 것입니다.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-5 items-center justify-center">
-              <Link
-                to="/about"
-                className="flex items-center justify-center gap-2 w-[210px] md:w-[230px] h-[60px] rounded-lg bg-[rgba(248,124,126,0.56)] text-black text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[rgba(248,124,126,0.7)] transition-colors"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 14.93 14.28"
-                  fill="none"
+        <div className="max-w-[1200px] mx-auto overflow-clip">
+          <div className="flex flex-col items-center p-4 sm:p-8 md:p-16">
+            <div className="bg-[#e4e8f6] flex flex-col gap-5 items-center px-6 sm:px-8 md:px-[144px] py-10 sm:py-[72px] rounded-[24px] sm:rounded-[47px] w-full max-w-[900px] md:h-[460px] justify-center">
+              {/* Title */}
+              <div className="flex flex-col gap-5 items-center text-center text-[#1e1e1e] py-[26px] w-full">
+                <p className="font-['April16th_Promise','Noto_Sans_KR',sans-serif] text-[24px] sm:text-[36px] md:text-[72px] leading-[1.2] tracking-[-2.16px]">
+                  IT노조와 함께 해주십시오!
+                </p>
+                <p className="font-['KoPubBatang_Pro','Noto_Sans_KR',sans-serif] text-[16px] sm:text-[20px] md:text-[32px] leading-[1.2]">
+                  나를 지키는 가장 확실한 방법은{" "}
+                  <br />
+                  우리가 되는 것입니다.
+                </p>
+              </div>
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row gap-5 items-center justify-center overflow-clip">
+                <Link
+                  to="/consult"
+                  className="flex items-center justify-center gap-2 w-[230px] h-[60px] rounded-lg bg-[rgba(248,124,126,0.56)] text-black text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[rgba(248,124,126,0.7)] transition-colors overflow-clip p-3"
                 >
-                  <path
-                    d={svgPaths.p23eb1c00}
-                    stroke="#1E1E1E"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.6"
-                  />
-                </svg>
-                후원하기
-              </Link>
-              <Link
-                to="/community"
-                className="flex items-center justify-center gap-2 w-[210px] md:w-[230px] h-[60px] rounded-lg bg-[#f87c7e] text-black text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[#f06062] transition-colors"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
+                  <svg width="16" height="16" viewBox="0 0 14.9334 14.28" fill="none">
+                    <path d={svgPaths.p23eb1c00} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" />
+                  </svg>
+                  후원하기
+                </Link>
+                <Link
+                  to="/community"
+                  className="flex items-center justify-center gap-2 w-[230px] h-[60px] rounded-lg bg-[#f87c7e] text-black text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[#f06062] transition-colors overflow-clip p-3"
                 >
-                  <path d={svgPaths.p14cb6300} fill="#374957" />
-                </svg>
-                조합원 가입
-              </Link>
+                  <svg width="16" height="16" viewBox="0 0 23.9126 23.9121" fill="none">
+                    <path d={svgPaths.p14cb6300} fill="#374957" />
+                  </svg>
+                  조합원 가입
+                </Link>
+              </div>
             </div>
           </div>
         </div>
