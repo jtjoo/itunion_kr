@@ -1,10 +1,14 @@
 {
   "permissions": {
+    "allow": [
+      "Bash(git push *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git check-ignore *)",
+      "Bash(pnpm install *)",
+      "Bash(git rm *)"
+    ],
     "additionalDirectories": [
       "/home/jtjoo/itunion/itu-react/src/assets/img"
-    ],
-    "allow": [
-      "Bash(git push *)"
     ]
   }
 }
