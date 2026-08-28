@@ -6,51 +6,51 @@ import imgImage from "../../assets/img/ITu_picture.jpg";
 
 function IconClock() {
   return (
-    <svg width="80" height="80" viewBox="0 0 44 44" fill="none">
-      <path d={svgPaths.p73f0e80} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
+    <svg width="80" height="80" viewBox="0 0 44 44" fill="none" className="text-foreground">
+      <path d={svgPaths.p73f0e80} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
     </svg>
   );
 }
 
 function IconMoon() {
   return (
-    <svg width="80" height="80" viewBox="0 0 39.9237 39.9237" fill="none">
-      <path d={svgPaths.p244f6a00} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
+    <svg width="80" height="80" viewBox="0 0 39.9237 39.9237" fill="none" className="text-foreground">
+      <path d={svgPaths.p244f6a00} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
     </svg>
   );
 }
 
 function IconLayers() {
   return (
-    <svg width="92" height="92" viewBox="0 0 92 92" fill="none">
-      <path d={svgPaths.p19861a70} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
+    <svg width="92" height="92" viewBox="0 0 92 92" fill="none" className="text-foreground">
+      <path d={svgPaths.p19861a70} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
     </svg>
   );
 }
 
 function IconSmile() {
   return (
-    <svg width="80" height="80" viewBox="0 0 44 44" fill="none">
-      <path d={svgPaths.p2965c200} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
+    <svg width="80" height="80" viewBox="0 0 44 44" fill="none" className="text-foreground">
+      <path d={svgPaths.p2965c200} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
     </svg>
   );
 }
 
 function IconBriefcase() {
   return (
-    <svg width="92" height="92" viewBox="0 0 92 92" fill="none">
-      <path d={svgPaths.p3e628100} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
+    <svg width="92" height="92" viewBox="0 0 92 92" fill="none" className="text-foreground">
+      <path d={svgPaths.p3e628100} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
     </svg>
   );
 }
 
 function IconGrid() {
   return (
-    <svg width="90" height="90" viewBox="0 0 90 90" fill="none">
-      <path d={svgPaths.p9c4d900} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
-      <path d={svgPaths.p2a6b9b00} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
-      <path d={svgPaths.p2833c7f0} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
-      <path d={svgPaths.p9fa83f2} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
+    <svg width="90" height="90" viewBox="0 0 90 90" fill="none" className="text-foreground">
+      <path d={svgPaths.p9c4d900} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
+      <path d={svgPaths.p2a6b9b00} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
+      <path d={svgPaths.p2833c7f0} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
+      <path d={svgPaths.p9fa83f2} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="6" />
     </svg>
   );
 }
@@ -59,32 +59,32 @@ function IconGrid() {
 
 function IconFolder() {
   return (
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-      <path d={svgPaths.p20e98880} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="text-foreground">
+      <path d={svgPaths.p20e98880} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
     </svg>
   );
 }
 
 function IconEdit() {
   return (
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-      <path d={svgPaths.p3b6bf400} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="text-foreground">
+      <path d={svgPaths.p3b6bf400} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
     </svg>
   );
 }
 
 function IconMessageCircle() {
   return (
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-      <path d={svgPaths.p329cd680} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="text-foreground">
+      <path d={svgPaths.p329cd680} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
     </svg>
   );
 }
 
 function IconPenTool() {
   return (
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-      <path d={svgPaths.p27d7aa80} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" className="text-foreground">
+      <path d={svgPaths.p27d7aa80} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
     </svg>
   );
 }
@@ -103,19 +103,19 @@ export function AboutPage() {
   return (
     <div className="flex flex-col items-center w-full">
       {/* Hero Basic */}
-      <section className="w-full bg-[#f5f5f5]">
+      <section className="w-full bg-surface-alt">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-8 md:px-16 py-20 sm:py-[120px] md:py-[160px] text-center flex flex-col items-center">
-          <h1 className="font-['Inter','Noto_Sans_KR',sans-serif] text-[32px] sm:text-[40px] md:text-[72px] text-[#1e1e1e] leading-[1.2] tracking-[-2.16px]">
+          <h1 className="font-['Inter','Noto_Sans_KR',sans-serif] text-[32px] sm:text-[40px] md:text-[72px] text-foreground leading-[1.2] tracking-[-2.16px]">
             소개
           </h1>
-          <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] sm:text-[20px] md:text-[32px] text-[#757575] leading-[1.2] mt-2">
+          <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] sm:text-[20px] md:text-[32px] text-text-secondary leading-[1.2] mt-2">
             한국정보통신산업노동조합을 소개합니다.
           </p>
         </div>
       </section>
 
       {/* Panel Image Content */}
-      <section className="w-full bg-white">
+      <section className="w-full bg-background">
         <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-6 sm:gap-[48px] items-start justify-center p-4 sm:p-8 md:p-16">
           <div className="w-full md:w-[484px] h-[250px] md:h-[350px] shrink-0 overflow-hidden">
             <img
@@ -126,14 +126,14 @@ export function AboutPage() {
           </div>
           <div className="flex flex-col gap-6 flex-1 md:w-[484px] md:min-w-[300px] md:h-[351px]">
             <div className="flex flex-col gap-2">
-              <h3 className="font-['Inter','Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-[#1e1e1e] leading-[1.2] tracking-[-0.48px]">
+              <h3 className="font-['Inter','Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-foreground leading-[1.2] tracking-[-0.48px]">
                 IT 노동자의 새로운 내일을 함께 만들어갑니다.
               </h3>
-              <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] md:text-[20px] text-[#757575] leading-[1.2]">
+              <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] md:text-[20px] text-text-secondary leading-[1.2]">
                 차기 집행부의 인사말
               </p>
             </div>
-            <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[14px] md:text-[16px] text-[#1e1e1e] leading-[1.4] space-y-4">
+            <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[14px] md:text-[16px] text-foreground leading-[1.4] space-y-4">
               <p>
                 노동조합이란 노동자들이 함께 모여 더 나은 노동 조건을 위해
                 연대하는 조직입니다. IT업계의 특수한 환경에서 프리랜서와 비정규직
@@ -151,11 +151,11 @@ export function AboutPage() {
       </section>
 
       {/* What We Do — IT노조의 목표 */}
-      <section className="w-full bg-[#d9d9d9]">
+      <section className="w-full bg-surface-alt">
         <div className="max-w-[1200px] mx-auto overflow-clip">
           <div className="flex flex-col gap-6 items-center px-4 sm:px-8 md:px-16 py-10 sm:py-[54px]">
             {/* Title */}
-            <div className="text-center w-full leading-[1.2] text-[#1e1e1e] p-[10px]">
+            <div className="text-center w-full leading-[1.2] text-foreground p-[10px]">
               <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[22px] sm:text-[28px] md:text-[36px] tracking-[-0.72px]">
                 IT노조의 목표
               </p>
@@ -177,7 +177,7 @@ export function AboutPage() {
                 >
                   <div className="flex flex-col items-center gap-4 flex-1 min-w-[160px]">
                     {goal.icon}
-                    <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-[#1e1e1e] leading-[1.2] tracking-[-0.48px] text-center">
+                    <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-foreground leading-[1.2] tracking-[-0.48px] text-center">
                       {goal.title}
                     </p>
                   </div>
@@ -198,7 +198,7 @@ export function AboutPage() {
                 >
                   <div className="flex flex-col items-center gap-4 flex-1 min-w-[160px]">
                     {goal.icon}
-                    <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-[#1e1e1e] leading-[1.2] tracking-[-0.48px] text-center">
+                    <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-foreground leading-[1.2] tracking-[-0.48px] text-center">
                       {goal.title}
                     </p>
                   </div>
@@ -210,14 +210,14 @@ export function AboutPage() {
       </section>
 
       {/* How We Work — 조직 체계 */}
-      <section className="w-full bg-[#f5f5f5]">
+      <section className="w-full bg-surface-alt">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-8 md:px-16 py-10 sm:py-16">
           {/* Title */}
           <div className="flex flex-col gap-2 items-center text-center">
-            <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[24px] sm:text-[32px] md:text-[48px] text-[#1e1e1e] leading-[1.2] tracking-[-0.96px]">
+            <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[24px] sm:text-[32px] md:text-[48px] text-foreground leading-[1.2] tracking-[-0.96px]">
               조직 체계
             </p>
-            <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] sm:text-[20px] md:text-[32px] text-[#757575] leading-[1.2]">
+            <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] sm:text-[20px] md:text-[32px] text-text-secondary leading-[1.2]">
               조합원 모두가 참여할 수 있는 민주적 조직입니다.
             </p>
           </div>
@@ -240,7 +240,7 @@ export function AboutPage() {
             {/* Directors — 위원장/부위원장 */}
             <div className="absolute left-[calc(50%-5.5px)] -translate-x-1/2 top-[199px] bg-[#c8c8c8] rounded-lg w-[300px] h-[80px]">
               <div className="flex flex-col items-center justify-center overflow-clip px-5 py-2.5 size-full rounded-[inherit]">
-                <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[24px] text-[#1b1b1b] leading-[1.2] tracking-[-0.48px] text-center">
+                <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[24px] text-foreground leading-[1.2] tracking-[-0.48px] text-center">
                   위원장 / 부위원장
                 </p>
               </div>
@@ -253,10 +253,10 @@ export function AboutPage() {
             {/* Election Management — 선거관리위원회 */}
             <div className="absolute left-[calc(50%+185px)] top-[197px] bg-[#c8c8c8] rounded-lg w-[259px] h-[84px]">
               <div className="flex flex-col items-center justify-center overflow-clip px-5 py-2.5 size-full rounded-[inherit]">
-                <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[24px] text-[#1b1b1b] leading-[1.2] tracking-[-0.48px] text-center">
+                <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[24px] text-foreground leading-[1.2] tracking-[-0.48px] text-center">
                   선거관리위원회
                 </p>
-                <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] text-[#1b1b1b] leading-[1.4] text-center">
+                <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] text-foreground leading-[1.4] text-center">
                   임원 선거 진행 담당
                 </p>
               </div>
@@ -269,10 +269,10 @@ export function AboutPage() {
             {/* Congress — 대의원 대회 */}
             <div className="absolute left-1/2 -translate-x-1/2 top-[362px] bg-[#c8c8c8] rounded-lg">
               <div className="flex flex-col items-center justify-center overflow-clip p-5 rounded-[inherit]">
-                <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[24px] text-[#1b1b1b] leading-[1.2] tracking-[-0.48px] text-center">
+                <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[24px] text-foreground leading-[1.2] tracking-[-0.48px] text-center">
                   대의원 대회
                 </p>
-                <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] text-[#1b1b1b] leading-[1.4] text-center">
+                <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] text-foreground leading-[1.4] text-center">
                   집행부의 사업 계획 및 조직 내부 의사 결정 기구
                 </p>
               </div>
@@ -287,15 +287,15 @@ export function AboutPage() {
               {branches.map((branch) => (
                 <div
                   key={branch.title}
-                  className="relative bg-white flex flex-col gap-6 h-[212px] items-center justify-center min-w-[240px] p-6 rounded-lg shrink-0"
+                  className="relative bg-background flex flex-col gap-6 h-[212px] items-center justify-center min-w-[240px] p-6 rounded-lg shrink-0"
                 >
-                  <div aria-hidden="true" className="absolute border border-[#d9d9d9] border-solid inset-0 pointer-events-none rounded-lg" />
+                  <div aria-hidden="true" className="absolute border border-border-muted border-solid inset-0 pointer-events-none rounded-lg" />
                   {branch.icon}
                   <div className="flex flex-col gap-1 items-center text-center w-full">
-                    <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[24px] text-[#1e1e1e] leading-[1.2] tracking-[-0.48px]">
+                    <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[24px] text-foreground leading-[1.2] tracking-[-0.48px]">
                       {branch.title}
                     </p>
-                    <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] text-[#1e1e1e] leading-[1.4]">
+                    <p className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] text-foreground leading-[1.4]">
                       {branch.desc}
                     </p>
                   </div>
@@ -314,21 +314,21 @@ export function AboutPage() {
             <div className="w-px h-[40px] bg-black" />
             {/* Directors */}
             <div className="relative bg-[#c8c8c8] rounded-lg px-5 py-3 text-center w-[260px]">
-              <p className="font-['Noto_Sans_KR',sans-serif] text-[20px] text-[#1b1b1b] tracking-[-0.48px] leading-[1.2]">위원장 / 부위원장</p>
+              <p className="font-['Noto_Sans_KR',sans-serif] text-[20px] text-foreground tracking-[-0.48px] leading-[1.2]">위원장 / 부위원장</p>
               <div aria-hidden="true" className="absolute border border-[#7f7f7f] border-solid inset-0 pointer-events-none rounded-lg" />
             </div>
             <div className="w-px h-[20px] bg-black" />
             {/* Election */}
             <div className="relative bg-[#c8c8c8] rounded-lg px-5 py-2.5 text-center w-[240px]">
-              <p className="font-['Noto_Sans_KR',sans-serif] text-[20px] text-[#1b1b1b] tracking-[-0.48px] leading-[1.2]">선거관리위원회</p>
-              <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] text-[#1b1b1b] leading-[1.4]">임원 선거 진행 담당</p>
+              <p className="font-['Noto_Sans_KR',sans-serif] text-[20px] text-foreground tracking-[-0.48px] leading-[1.2]">선거관리위원회</p>
+              <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] text-foreground leading-[1.4]">임원 선거 진행 담당</p>
               <div aria-hidden="true" className="absolute border border-[#7f7f7f] border-solid inset-0 pointer-events-none rounded-lg" />
             </div>
             <div className="w-px h-[40px] bg-black" />
             {/* Congress */}
             <div className="relative bg-[#c8c8c8] rounded-lg px-6 py-5 text-center">
-              <p className="font-['Noto_Sans_KR',sans-serif] text-[20px] text-[#1b1b1b] tracking-[-0.48px] leading-[1.2]">대의원 대회</p>
-              <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] text-[#1b1b1b] leading-[1.4]">집행부의 사업 계획 및 조직 내부 의사 결정 기구</p>
+              <p className="font-['Noto_Sans_KR',sans-serif] text-[20px] text-foreground tracking-[-0.48px] leading-[1.2]">대의원 대회</p>
+              <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] text-foreground leading-[1.4]">집행부의 사업 계획 및 조직 내부 의사 결정 기구</p>
               <div aria-hidden="true" className="absolute border border-[#7f7f7f] border-solid inset-0 pointer-events-none rounded-lg" />
             </div>
             <div className="w-px h-[40px] bg-black" />
@@ -337,13 +337,13 @@ export function AboutPage() {
               {branches.map((branch) => (
                 <div
                   key={branch.title}
-                  className="relative bg-white flex flex-col gap-6 h-[212px] items-center justify-center min-w-[240px] p-6 rounded-lg"
+                  className="relative bg-background flex flex-col gap-6 h-[212px] items-center justify-center min-w-[240px] p-6 rounded-lg"
                 >
-                  <div aria-hidden="true" className="absolute border border-[#d9d9d9] border-solid inset-0 pointer-events-none rounded-lg" />
+                  <div aria-hidden="true" className="absolute border border-border-muted border-solid inset-0 pointer-events-none rounded-lg" />
                   {branch.icon}
                   <div className="flex flex-col gap-1 items-center text-center w-full">
-                    <p className="font-['Noto_Sans_KR',sans-serif] text-[18px] text-[#1e1e1e] tracking-[-0.48px] leading-[1.2]">{branch.title}</p>
-                    <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] text-[#1e1e1e] leading-[1.4]">{branch.desc}</p>
+                    <p className="font-['Noto_Sans_KR',sans-serif] text-[18px] text-foreground tracking-[-0.48px] leading-[1.2]">{branch.title}</p>
+                    <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] text-foreground leading-[1.4]">{branch.desc}</p>
                   </div>
                 </div>
               ))}
@@ -353,12 +353,12 @@ export function AboutPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="w-full bg-white">
+      <section className="w-full bg-background">
         <div className="max-w-[1200px] mx-auto overflow-clip">
           <div className="flex flex-col items-center p-4 sm:p-8 md:p-16">
             <div className="bg-[#e4e8f6] flex flex-col gap-5 items-center px-6 sm:px-8 md:px-[144px] py-10 sm:py-[72px] rounded-[24px] sm:rounded-[47px] w-full max-w-[900px] md:h-[460px] justify-center">
               {/* Title */}
-              <div className="flex flex-col gap-5 items-center text-center text-[#1e1e1e] py-[26px] w-full">
+              <div className="flex flex-col gap-5 items-center text-center text-foreground py-[26px] w-full">
                 <p className="font-['April16th_Promise','Noto_Sans_KR',sans-serif] text-[24px] sm:text-[36px] md:text-[72px] leading-[1.2] tracking-[-2.16px]">
                   IT노조와 함께 해주십시오!
                 </p>
@@ -372,10 +372,10 @@ export function AboutPage() {
               <div className="flex flex-col sm:flex-row gap-5 items-center justify-center overflow-clip">
                 <Link
                   to="/consult"
-                  className="flex items-center justify-center gap-2 w-[230px] h-[60px] rounded-lg bg-[rgba(248,124,126,0.56)] text-black text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[rgba(248,124,126,0.7)] transition-colors overflow-clip p-3"
+                  className="flex items-center justify-center gap-2 w-[230px] h-[60px] rounded-lg bg-[rgba(248,124,126,0.56)] dark:bg-[rgba(232,68,90,0.6)] text-black text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[rgba(248,124,126,0.7)] dark:hover:bg-[rgba(232,68,90,0.7)] transition-colors overflow-clip p-3"
                 >
-                  <svg width="16" height="16" viewBox="0 0 14.9334 14.28" fill="none">
-                    <path d={svgPaths.p23eb1c00} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" />
+                  <svg width="16" height="16" viewBox="0 0 14.9334 14.28" fill="none" className="text-foreground">
+                    <path d={svgPaths.p23eb1c00} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" />
                   </svg>
                   후원하기
                 </Link>
@@ -383,8 +383,8 @@ export function AboutPage() {
                   to="/community"
                   className="flex items-center justify-center gap-2 w-[230px] h-[60px] rounded-lg bg-[#f87c7e] text-black text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[#f06062] transition-colors overflow-clip p-3"
                 >
-                  <svg width="16" height="16" viewBox="0 0 23.9126 23.9121" fill="none">
-                    <path d={svgPaths.p14cb6300} fill="#374957" />
+                  <svg width="16" height="16" viewBox="0 0 23.9126 23.9121" fill="none" className="text-icon">
+                    <path d={svgPaths.p14cb6300} fill="currentColor" />
                   </svg>
                   조합원 가입
                 </Link>

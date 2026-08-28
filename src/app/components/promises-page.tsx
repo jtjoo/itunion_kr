@@ -2,14 +2,14 @@ export function PromisesPage() {
   return (
     <div className="flex flex-col items-center w-full">
       {/* Promises Content */}
-      <section className="w-full bg-white">
+      <section className="w-full bg-background">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-16 py-10 sm:py-12 md:py-16 flex flex-col items-center">
           {/* Head Title */}
           <div className="flex flex-col gap-2 items-center text-center w-full max-w-[914px]">
-            <h1 className="font-['Inter','Noto_Sans_KR',sans-serif] text-[28px] sm:text-[36px] md:text-[72px] text-black leading-[1.2] tracking-[-2.16px] w-full">
+            <h1 className="font-['Inter','Noto_Sans_KR',sans-serif] text-[28px] sm:text-[36px] md:text-[72px] text-foreground leading-[1.2] tracking-[-2.16px] w-full">
               한국정보통신산업노동조합 규약
             </h1>
-            <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] sm:text-[20px] md:text-[32px] text-[#757575] leading-[1.2] w-full whitespace-pre-wrap">
+            <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[16px] sm:text-[20px] md:text-[32px] text-text-secondary leading-[1.2] w-full whitespace-pre-wrap">
               <p className="mb-0">IT노조 조합에 소속된 모든 이가 지켜야 하는 규칙이며</p>
               <p className="mb-0">조직을 운영해나가기 위한 약속입니다.</p>
               <p className="mb-0">&nbsp;</p>
@@ -19,7 +19,7 @@ export function PromisesPage() {
 
           {/* Revision History */}
           <div className="w-full py-6 overflow-x-auto">
-            <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[13px] sm:text-[14px] md:text-[16px] text-[#1e1e1e] text-right leading-[1.4]">
+            <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[13px] sm:text-[14px] md:text-[16px] text-foreground text-right leading-[1.4]">
               <p className="mb-0"><span className="font-['Inter','Noto_Sans_KR',sans-serif]">개정 연혁</span></p>
               <p className="mb-0">제1차 개정 : 2003년 11월 20일</p>
               <p className="mb-0">제2차 개정 : 2003년 12월 06일</p>
@@ -35,7 +35,7 @@ export function PromisesPage() {
           </div>
 
           {/* Full Article Text */}
-          <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[14px] sm:text-[15px] md:text-[16px] text-black leading-[1.4] w-full">
+          <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[14px] sm:text-[15px] md:text-[16px] text-foreground leading-[1.4] w-full">
             <p className="mb-0">제1장 총칙</p>
             <p className="mb-0">&nbsp;</p>
             <p className="mb-0">제1조(명칭) 본 조합은 한국정보통신산업노동조합(이하 조합)이라 하며 약칭은 "IT노조"와 "IT유니온"이라 하고, 영문은 Korea IT Industry Laborers' Union 로 하며 약칭은 IT Union으로 한다.</p>

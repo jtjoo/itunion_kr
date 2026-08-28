@@ -24,23 +24,24 @@ export function HomePage() {
           />
         </div>
         <div className="relative h-full max-w-[1200px] mx-auto flex flex-col justify-end items-end p-4 sm:p-6 md:p-[30px]">
-          <h1 className="font-display-promise text-[24px] sm:text-[32px] md:text-[63px] text-[#d9d9d9] text-right leading-none mb-4 sm:mb-6">
+            <h1 className="font-display-promise text-[24px] sm:text-[32px] md:text-[63px] text-[#d9d9d9] dark:text-[#e0e0e0] text-right leading-none mb-4 sm:mb-6">
             IT노동자의 내일을 함께 만듭니다
           </h1>
           <div className="flex gap-3 sm:gap-4 md:gap-5">
             <Link
               to="/about"
-              className="flex items-center gap-2 h-[42px] sm:h-[48px] md:h-[60px] px-4 sm:px-5 md:px-8 rounded-lg bg-[rgba(219,220,221,0.57)] border border-[rgba(219,220,221,0.57)] text-black text-[14px] sm:text-[16px] md:text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[rgba(219,220,221,0.8)] transition-colors"
+              className="flex items-center gap-2 h-[42px] sm:h-[48px] md:h-[60px] px-4 sm:px-5 md:px-8 rounded-lg bg-[rgba(219,220,221,0.57)] dark:bg-[rgba(60,60,60,0.7)] border border-[rgba(219,220,221,0.57)] dark:border-[rgba(60,60,60,0.7)] text-black text-[14px] sm:text-[16px] md:text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[rgba(219,220,221,0.8)] dark:hover:bg-[rgba(60,60,60,0.8)] transition-colors"
             >
               <svg
                 width="16"
                 height="16"
                 viewBox="0 0 14.93 14.28"
                 fill="none"
+                className="text-foreground"
               >
                 <path
                   d={svgPaths.p23eb1c00}
-                  stroke="#1E1E1E"
+                  stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="1.6"
@@ -50,7 +51,7 @@ export function HomePage() {
             </Link>
             <Link
               to="/community"
-              className="flex items-center gap-2 h-[42px] sm:h-[48px] md:h-[60px] px-4 sm:px-5 md:px-8 rounded-lg bg-[rgba(248,124,126,0.56)] border border-[rgba(124,130,248,0.56)] text-[#f5f5f5] text-[14px] sm:text-[16px] md:text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[rgba(248,124,126,0.7)] transition-colors"
+              className="flex items-center gap-2 h-[42px] sm:h-[48px] md:h-[60px] px-4 sm:px-5 md:px-8 rounded-lg bg-[rgba(248,124,126,0.56)] dark:bg-[rgba(232,68,90,0.6)] border border-[rgba(124,130,248,0.56)] dark:border-[rgba(160,160,248,0.5)] text-[#f5f5f5] text-[14px] sm:text-[16px] md:text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[rgba(248,124,126,0.7)] dark:hover:bg-[rgba(232,68,90,0.7)] transition-colors"
             >
               <svg
                 width="16"
@@ -67,13 +68,13 @@ export function HomePage() {
       </section>
 
       {/* Who We Are */}
-      <section className="w-full bg-white py-8 md:py-8 px-4 sm:px-6">
+      <section className="w-full bg-background py-8 md:py-8 px-4 sm:px-6">
         <div className="max-w-[1200px] mx-auto px-0 md:px-8 py-6 sm:py-8">
           <div className="max-w-[1002px] mx-auto text-center">
-            <h2 className="font-['Noto_Sans_KR',sans-serif] text-[22px] sm:text-[28px] md:text-[40px] text-[#1e1e1e] leading-[1.2] mb-6 sm:mb-8 md:mb-10">
+            <h2 className="font-['Noto_Sans_KR',sans-serif] text-[22px] sm:text-[28px] md:text-[40px] text-foreground leading-[1.2] mb-6 sm:mb-8 md:mb-10">
               한국정보통신노동조합은 어떤 곳인가요?
             </h2>
-            <div className="text-left font-['Noto_Sans_KR',sans-serif] text-[14px] sm:text-[16px] md:text-[24px] text-[#1e1e1e] leading-[1.4] space-y-4">
+            <div className="text-left font-['Noto_Sans_KR',sans-serif] text-[14px] sm:text-[16px] md:text-[24px] text-foreground leading-[1.4] space-y-4">
               <p>
                 {`노동조합은 "임금노동자가 노동생활의 제 조건을 유지, 개선할 목적으로 하는 계속적인 단체" 입니다. 일터에서 부당한 대우를 당할 때, 노동자 개인이 문제를 해결하기 어렵거나 불가능한 경우가 많습니다. 이럴 때 노동조합에서 여러가지 형태로 도움을 받을 수 있습니다.`}
               </p>
@@ -89,13 +90,13 @@ export function HomePage() {
       </section>
 
       {/* What We Do - Activities */}
-      <section className="w-full bg-[#d9d9d9]">
+      <section className="w-full bg-surface-alt">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-8 md:px-16 pt-12 sm:pt-16 pb-10 sm:pb-[74px]">
           <div className="text-center mb-6">
-            <h2 className="font-['Noto_Sans_KR',sans-serif] text-[22px] sm:text-[28px] md:text-[36px] text-[#1e1e1e] leading-[1.2] tracking-[-0.72px]">
+            <h2 className="font-['Noto_Sans_KR',sans-serif] text-[22px] sm:text-[28px] md:text-[36px] text-foreground leading-[1.2] tracking-[-0.72px]">
               우리의 핵심 활동들
             </h2>
-            <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] sm:text-[18px] md:text-[24px] text-[#1e1e1e] leading-[1.2] mt-2">
+            <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] sm:text-[18px] md:text-[24px] text-foreground leading-[1.2] mt-2">
               더 나은 노동 환경을 만들기 위해 노력합니다.
             </p>
           </div>
@@ -106,7 +107,7 @@ export function HomePage() {
                   <Shield
                     size={80}
                     strokeWidth={1.5}
-                    className="text-[#374957]"
+                    className="text-icon"
                   />
                 ),
                 title: "노동권 보호",
@@ -117,7 +118,7 @@ export function HomePage() {
                   <Briefcase
                     size={80}
                     strokeWidth={1.5}
-                    className="text-[#374957]"
+                    className="text-icon"
                   />
                 ),
                 title: "노동환경 개선",
@@ -128,7 +129,7 @@ export function HomePage() {
                   <Smile
                     size={80}
                     strokeWidth={1.5}
-                    className="text-[#374957]"
+                    className="text-icon"
                   />
                 ),
                 title: "함께하는 공동체",
@@ -140,10 +141,10 @@ export function HomePage() {
                 className="flex flex-col items-center text-center w-[280px] md:w-[300px] gap-2 p-5"
               >
                 <div className="mb-2">{card.icon}</div>
-                <h3 className="font-['Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-[#1e1e1e] tracking-[-0.48px] leading-[1.2]">
+                <h3 className="font-['Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-foreground tracking-[-0.48px] leading-[1.2]">
                   {card.title}
                 </h3>
-                <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] md:text-[20px] text-[#1e1e1e] leading-[1.4]">
+                <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] md:text-[20px] text-foreground leading-[1.4]">
                   {card.desc}
                 </p>
               </div>
@@ -153,11 +154,11 @@ export function HomePage() {
       </section>
 
       {/* Recent News - Articles */}
-      <section className="w-full bg-white opacity-80">
+      <section className="w-full bg-background opacity-80">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-8 md:px-16 py-10 sm:py-12 md:py-16 space-y-10 sm:space-y-12">
           {/* Article 1 - Image Left, Text Right */}
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start justify-center">
-            <div className="w-full md:w-[484px] h-[250px] md:h-[350px] bg-[#e3e3e3] overflow-hidden shrink-0 relative">
+            <div className="w-full md:w-[484px] h-[250px] md:h-[350px] bg-[#e3e3e3] dark:bg-[#3a3a3a] overflow-hidden shrink-0 relative">
               <img
                 src={imgImage}
                 alt=""
@@ -166,14 +167,14 @@ export function HomePage() {
             </div>
             <div className="flex flex-col gap-6 flex-1 md:w-[484px] md:min-w-[300px] md:h-[350px]">
               <div className="flex flex-col gap-2">
-                <h3 className="font-['Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-[#1e1e1e] leading-[1.2] tracking-[-0.48px]">
+                <h3 className="font-['Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-foreground leading-[1.2] tracking-[-0.48px]">
                   Heading
                 </h3>
-                <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] md:text-[20px] text-[#757575] leading-[1.2]">
+                <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] md:text-[20px] text-text-secondary leading-[1.2]">
                   Subheading
                 </p>
               </div>
-              <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[14px] md:text-[16px] text-[#1e1e1e] leading-[1.4] space-y-4">
+              <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[14px] md:text-[16px] text-foreground leading-[1.4] space-y-4">
                 <p>
                   Body text for your whole article or post. We'll put in some
                   lorem ipsum to show how a filled-out page might look:
@@ -197,14 +198,14 @@ export function HomePage() {
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start justify-center">
             <div className="flex flex-col gap-6 flex-1 md:w-[484px] md:min-w-[300px] md:h-[350px] order-2 md:order-1">
               <div className="flex flex-col gap-2">
-                <h3 className="font-['Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-[#1e1e1e] leading-[1.2] tracking-[-0.48px]">
+                <h3 className="font-['Noto_Sans_KR',sans-serif] text-[20px] md:text-[24px] text-foreground leading-[1.2] tracking-[-0.48px]">
                   Heading
                 </h3>
-                <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] md:text-[20px] text-[#757575] leading-[1.2]">
+                <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] md:text-[20px] text-text-secondary leading-[1.2]">
                   Subheading
                 </p>
               </div>
-              <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[14px] md:text-[16px] text-[#1e1e1e] leading-[1.4] space-y-4">
+              <div className="font-['Inter','Noto_Sans_KR',sans-serif] text-[14px] md:text-[16px] text-foreground leading-[1.4] space-y-4">
                 <p>
                   Body text for your whole article or post. We'll put in some
                   lorem ipsum to show how a filled-out page might look:
@@ -222,7 +223,7 @@ export function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="w-full md:w-[484px] h-[250px] md:h-[350px] bg-[#e3e3e3] overflow-hidden shrink-0 relative order-1 md:order-2">
+            <div className="w-full md:w-[484px] h-[250px] md:h-[350px] bg-[#e3e3e3] dark:bg-[#3a3a3a] overflow-hidden shrink-0 relative order-1 md:order-2">
               <img
                 src={imgImage}
                 alt=""
@@ -234,14 +235,14 @@ export function HomePage() {
       </section>
 
       {/* Brief History - Timeline */}
-      <section className="w-full bg-white py-10 sm:py-12 md:py-16 px-4 sm:px-6">
+      <section className="w-full bg-background py-10 sm:py-12 md:py-16 px-4 sm:px-6">
         <div className="max-w-[1200px] mx-auto">
           {/* Timeline Title */}
           <div className="text-center mb-6 sm:mb-8 py-4 sm:py-8">
-            <h2 className="font-['Noto_Sans_KR',sans-serif] text-[24px] sm:text-[32px] md:text-[48px] text-[#1e1e1e] leading-[1.2] tracking-[-0.96px]">
+            <h2 className="font-['Noto_Sans_KR',sans-serif] text-[24px] sm:text-[32px] md:text-[48px] text-foreground leading-[1.2] tracking-[-0.96px]">
               우리가 걸어온 길
             </h2>
-            <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] sm:text-[20px] md:text-[32px] text-[#757575] leading-[1.2] mt-2">
+            <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] sm:text-[20px] md:text-[32px] text-text-secondary leading-[1.2] mt-2">
               한국정보통신산업노동조합은 국내 최초로 설립된
               <br className="hidden md:block" />
               {` IT산업에 종사하는 노동자를 대상으로 한 산별노조입니다.`}
@@ -317,7 +318,7 @@ export function HomePage() {
                 {/* Dot */}
                 <div className="absolute left-[7px] md:left-1/2 top-5 w-[18px] h-[18px] md:-translate-x-1/2 z-10">
                   <div
-                    className="w-full h-full rounded-full border-[4px] bg-white"
+                    className="w-full h-full rounded-full border-[4px] bg-background"
                     style={{ borderColor: item.color }}
                   />
                 </div>
@@ -330,7 +331,7 @@ export function HomePage() {
                       : "md:ml-[calc(50%+40px)]"
                   }`}
                 >
-                  <div className="bg-[#d9d9d9] rounded-xl p-5">
+                  <div className="bg-surface-alt rounded-xl p-5">
                     <p
                       className={`font-display-promise text-[28px] md:text-[48px] leading-[1.2] tracking-[-0.96px]`}
                       style={{ color:item.color }}
@@ -340,7 +341,7 @@ export function HomePage() {
                     <p className="font-display-promise text-[16px] md:text-[24px] text-[rgba(0,0,0,0.5)] leading-[1.2] mt-3">
                       {item.title}
                     </p>
-                    <div className="font-['Noto_Sans_KR',sans-serif] text-[14px] md:text-[16px] text-black mt-2 leading-[1.2] whitespace-pre-line">
+                    <div className="font-['Noto_Sans_KR',sans-serif] text-[14px] md:text-[16px] text-foreground mt-2 leading-[1.2] whitespace-pre-line">
                       {"descJsx" in item ? item.descJsx : item.desc}
                     </div>
                   </div>
@@ -352,12 +353,12 @@ export function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="w-full bg-white">
+      <section className="w-full bg-background">
         <div className="max-w-[1200px] mx-auto overflow-clip">
           <div className="flex flex-col items-center p-4 sm:p-8 md:p-16">
-            <div className="bg-[#e4e8f6] flex flex-col gap-5 items-center px-6 sm:px-8 md:px-[144px] py-10 sm:py-[72px] rounded-[24px] sm:rounded-[47px] w-full max-w-[900px] md:h-[460px] justify-center">
+            <div className="bg-surface-alt flex flex-col gap-5 items-center px-6 sm:px-8 md:px-[144px] py-10 sm:py-[72px] rounded-[24px] sm:rounded-[47px] w-full max-w-[900px] md:h-[460px] justify-center">
               {/* Title */}
-              <div className="flex flex-col gap-5 items-center text-center text-[#1e1e1e] py-[26px] w-full">
+              <div className="flex flex-col gap-5 items-center text-center text-foreground py-[26px] w-full">
                 <p className="font-['April16th_Promise','Noto_Sans_KR',sans-serif] text-[24px] sm:text-[36px] md:text-[72px] leading-[1.2] tracking-[-2.16px]">
                   IT노조와 함께 해주십시오!
                 </p>
@@ -371,10 +372,10 @@ export function HomePage() {
               <div className="flex flex-col sm:flex-row gap-5 items-center justify-center overflow-clip">
                 <Link
                   to="/consult"
-                  className="flex items-center justify-center gap-2 w-[230px] h-[60px] rounded-lg bg-[rgba(248,124,126,0.56)] text-black text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[rgba(248,124,126,0.7)] transition-colors overflow-clip p-3"
+                  className="flex items-center justify-center gap-2 w-[230px] h-[60px] rounded-lg bg-[rgba(248,124,126,0.56)] dark:bg-[rgba(232,68,90,0.6)] text-black text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[rgba(248,124,126,0.7)] dark:hover:bg-[rgba(232,68,90,0.7)] transition-colors overflow-clip p-3"
                 >
-                  <svg width="16" height="16" viewBox="0 0 14.9334 14.28" fill="none">
-                    <path d={svgPaths.p23eb1c00} stroke="#1E1E1E" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" />
+                  <svg width="16" height="16" viewBox="0 0 14.9334 14.28" fill="none" className="text-foreground">
+                    <path d={svgPaths.p23eb1c00} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" />
                   </svg>
                   후원하기
                 </Link>
@@ -382,8 +383,8 @@ export function HomePage() {
                   to="/community"
                   className="flex items-center justify-center gap-2 w-[230px] h-[60px] rounded-lg bg-[#f87c7e] text-black text-[22px] font-['Noto_Sans_KR',sans-serif] hover:bg-[#f06062] transition-colors overflow-clip p-3"
                 >
-                  <svg width="16" height="16" viewBox="0 0 23.9126 23.9121" fill="none">
-                    <path d={svgPaths.p14cb6300} fill="#374957" />
+                  <svg width="16" height="16" viewBox="0 0 23.9126 23.9121" fill="none" className="text-icon">
+                    <path d={svgPaths.p14cb6300} fill="currentColor" />
                   </svg>
                   조합원 가입
                 </Link>

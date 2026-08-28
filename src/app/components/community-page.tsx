@@ -32,19 +32,19 @@ export function CommunityPage() {
   return (
     <div className="flex flex-col items-center w-full min-h-[60vh]">
       {/* Header */}
-      <section className="w-full bg-[#f5f5f5] py-6 sm:py-8 md:py-12 px-4 sm:px-6">
+      <section className="w-full bg-surface-alt py-6 sm:py-8 md:py-12 px-4 sm:px-6">
         <div className="max-w-[1200px] mx-auto">
-          <h1 className="font-['Noto_Sans_KR',sans-serif] text-[28px] md:text-[40px] text-[#1e1e1e] tracking-tight text-center">
+          <h1 className="font-['Noto_Sans_KR',sans-serif] text-[28px] md:text-[40px] text-foreground tracking-tight text-center">
             소통공간
           </h1>
-          <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] text-[#757575] text-center mt-2">
+          <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] text-text-secondary text-center mt-2">
             조합원 간 소통과 정보 공유의 공간입니다.
           </p>
         </div>
       </section>
 
       {/* Tabs + Content */}
-      <section className="w-full bg-white py-4 sm:py-6 md:py-10 px-4 sm:px-6">
+      <section className="w-full bg-background py-4 sm:py-6 md:py-10 px-4 sm:px-6">
         <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-6">
           {/* Sidebar tabs */}
           <div className="w-full md:w-[200px] shrink-0">
@@ -55,8 +55,8 @@ export function CommunityPage() {
                   onClick={() => setSearchParams({ tab: tab.id })}
                   className={`flex items-center gap-2 px-4 py-3 rounded-lg text-[14px] font-['Noto_Sans_KR',sans-serif] transition-colors whitespace-nowrap ${
                     activeTab === tab.id
-                      ? "bg-[#1e1e1e] text-white"
-                      : "bg-[#f5f5f5] text-[#1e1e1e] hover:bg-[#e6e6e6]"
+                      ? "bg-foreground text-white"
+                      : "bg-surface-alt text-foreground hover:bg-border-strong"
                   }`}
                 >
                   {tab.icon}
@@ -70,14 +70,14 @@ export function CommunityPage() {
           <div className="flex-1">
             {isLocked ? (
               <div className="flex flex-col items-center justify-center py-16 text-center">
-                <Lock size={48} className="text-[#d9d9d9] mb-4" />
-                <h3 className="font-['Noto_Sans_KR',sans-serif] text-[20px] text-[#1e1e1e] mb-2">
+                <Lock size={48} className="text-[#d9d9d9] dark:text-[#555] mb-4" />
+                <h3 className="font-['Noto_Sans_KR',sans-serif] text-[20px] text-foreground mb-2">
                   조합원 전용 공간입니다
                 </h3>
-                <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] text-[#757575] mb-6">
+                <p className="font-['Noto_Sans_KR',sans-serif] text-[14px] text-text-secondary mb-6">
                   이 공간은 로그인한 조합원만 접근할 수 있습니다.
                 </p>
-                <button className="px-6 py-3 rounded-lg bg-[#c30d23] text-white text-[16px] font-['Noto_Sans_KR',sans-serif] hover:bg-[#a00b1d] transition-colors">
+                <button className="px-6 py-3 rounded-lg bg-brand text-white text-[16px] font-['Noto_Sans_KR',sans-serif] hover:bg-brand-hover transition-colors">
                   로그인하기
                 </button>
               </div>
@@ -86,20 +86,20 @@ export function CommunityPage() {
                 {filteredPosts.map((post) => (
                   <div
                     key={post.id}
-                    className="flex items-center justify-between p-4 border border-[#e6e6e6] rounded-lg hover:border-[#c30d23]/30 hover:bg-[#fef9f9] transition-colors cursor-pointer"
+                    className="flex items-center justify-between p-4 border border-border-strong rounded-lg hover:border-[#c30d23]/30 hover:bg-[#fef9f9] transition-colors cursor-pointer"
                   >
                     <div className="flex-1 min-w-0">
-                      <h3 className="font-['Noto_Sans_KR',sans-serif] text-[15px] text-[#1e1e1e] truncate">
+                      <h3 className="font-['Noto_Sans_KR',sans-serif] text-[15px] text-foreground truncate">
                         {post.title}
                       </h3>
                       <div className="flex gap-3 mt-1">
-                        <span className="font-['Noto_Sans_KR',sans-serif] text-[12px] text-[#757575]">
+                        <span className="font-['Noto_Sans_KR',sans-serif] text-[12px] text-text-secondary">
                           {post.author}
                         </span>
-                        <span className="font-['Noto_Sans_KR',sans-serif] text-[12px] text-[#999]">
+                        <span className="font-['Noto_Sans_KR',sans-serif] text-[12px] text-text-muted">
                           {post.date}
                         </span>
-                        <span className="font-['Noto_Sans_KR',sans-serif] text-[12px] text-[#999]">
+                        <span className="font-['Noto_Sans_KR',sans-serif] text-[12px] text-text-muted">
                           답글 {post.replies}
                         </span>
                       </div>
@@ -110,7 +110,7 @@ export function CommunityPage() {
 
                 {filteredPosts.length === 0 && (
                   <div className="text-center py-12">
-                    <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] text-[#757575]">
+                    <p className="font-['Noto_Sans_KR',sans-serif] text-[16px] text-text-secondary">
                       게시글이 없습니다.
                     </p>
                   </div>
